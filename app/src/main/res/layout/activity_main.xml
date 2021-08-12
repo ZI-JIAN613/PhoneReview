@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/chistmastbeautyregular"
+        android:text="Name:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FBAE3C"
+        android:textColorHighlight="#FBAE3C" />
+
+    <EditText
+        android:id="@+id/etTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FBAE3C"
+        android:hint="Enter name of phone here"
+        android:textColor="#FBAE3C" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FBAE3C"
+        android:fontFamily="@font/chistmastbeautyregular"
+        android:text="Description:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FBAE3C" />
+
+    <EditText
+        android:id="@+id/etSingers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FBAE3C"
+        android:hint="Enter description of phone here"
+        android:textColor="#FBAE3C" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FBAE3C"
+        android:fontFamily="@font/chistmastbeautyregular"
+        android:text="Release date:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FBAE3C" />
+
+    <EditText
+        android:id="@+id/etYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FBAE3C"
+        android:hint="Enter release date"
+        android:textColor="#FBAE3C" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FBAE3C"
+        android:fontFamily="@font/chistmastbeautyregular"
+        android:text="@string/stars"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FBAE3C" />
+
+    <RatingBar
+        android:id="@+id/ratingBarInsertSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FBAE3C"
+        android:numStars="5"
+        android:outlineAmbientShadowColor="#FBAE3C"
+        android:stepSize="1"
+        android:textColor="#FBAE3C"
+        android:theme="@style/RatingBar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnInsertSong"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/chistmastbeautyregular"
+            android:text="@string/btnInsert" />
+
+        <Button
+            android:id="@+id/btnShowList"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/chistmastbeautyregular"
+            android:text="@string/btnShowList" />
+
+    </LinearLayout>
+</LinearLayout>
